@@ -1,0 +1,24 @@
+{
+	"name": "HideMyCount",
+	"version": "1.0.0",
+	"description": "## License MIT © [Ashik Nesin](http://ashiknesin.com)",
+	"main": "index.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "webpack --watch"
+	},
+	"keywords": [],
+	"author": "Ashik Nesin <mail@ashiknesin.com>",
+	"license": "ISC",
+	"dependencies": {
+		"element-ready": "^2.2.1",
+		"on-change": "^0.1.0",
+		"webpack": "^4.3.0"
+	},
+	"devDependencies": {
+		"webpack-cli": "^2.0.13"
+	}
+}

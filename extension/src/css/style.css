@@ -1,0 +1,42 @@
+/* single video page → View Count */
+/* It hides views by default to avoid showing it for few seconds when page gets loaded */
+#page-manager .ytd-video-primary-info-renderer .yt-view-count-renderer{
+	display: none;
+}
+
+ /* ============= Hide video counts in Creator Studio → Dashboard */
+
+ #creator-page-content span[title="Views"]{
+ 	display: none;
+ }
+
+/* View Count*/
+#dashboard-header-stats li:first-child {
+ 	display: none;
+}
+
+/* Subscribers count */
+#dashboard-header-stats li:nth-child(2) {
+ 	display: none;
+}
+
+ /* ============= Hide video counts in Creator Studio → Videos */
+#vm-video-list-container .vm-video-side-view-count{
+	display: none;
+}
+
+/*  With disable_polymer  */
+
+.channels-content-item .yt-lockup-meta-info li:nth-child(2){
+	display: none;
+}
+.channel-header-subscription-button-container, .yt-subscription-button-subscriber-count-branded-horizontal{
+	display: none !important;
+}
+
+
+ /* ============= My Channel */
+
+ytd-browse[page-subtype="channels"] #metadata-container #metadata-line {
+	display: none;
+}

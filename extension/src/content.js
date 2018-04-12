@@ -1,5 +1,5 @@
 // Packages
-const elementReady = require('element-ready');
+// const elementReady = require('element-ready');
 
 // Utils
 // TODO: Check if regex is correct.
@@ -9,29 +9,6 @@ const isYouTubeChannelPage = channelId => window.location.pathname.startsWith(`/
 
 const isYouTubeCreatorVideos = () => window.location.pathname.startsWith(`/my_videos`)
 const isYouTubeCreatorDashboard = () => window.location.pathname.startsWith(`/dashboard`)
-
-// https://github.com/sindresorhus/refined-github/blob/4d0fff7c04fb5f221675ac7ea0baff56b462e0ad/source/libs/simplified-element-observer.js
-const observeEl = (el, listener, options = {
-    childList: true
-  }) => {
-  if (typeof el === 'string') {
-    el = document.querySelector(el);
-  }
-
-  if (!el) {
-    return;
-  }
-
-  // Run first
-  listener([]);
-
-  // Run on updates
-  const observer = new MutationObserver(listener);
-  observer.observe(el, options);
-  return observer;
-
-}
-
 
 let OWN_CHANNEL_ID = null;
 
